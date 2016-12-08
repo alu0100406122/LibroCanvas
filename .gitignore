@@ -2,3 +2,4 @@
 /wiki/
 npm-debug.*
 /.gitbook-start/
+/.secret.json/
