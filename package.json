@@ -1,0 +1,71 @@
+{
+     "name": "librocanvas",
+     "version": "0.0.1",
+     "description": "Gitbook",
+     "main": "index.js",
+     "engines": {
+          "node": "5.9.1"
+     },
+     "scripts": {
+          "generate-gitbook": "./scripts/losh generate-gitbook",
+          "generate-wiki": "./scripts/losh generate-wiki",
+          "build": "npm install && npm i gitbook-cli && npm run generate-gitbook && npm run generate-wiki",
+          "deploy-gitbook": "./scripts/losh deploy-gitbook",
+          "deploy-wiki": "./scripts/losh deploy-wiki",
+          "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
+          "version": "./scripts/losh version",
+          "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "repository": {
+          "type": "git",
+          "url": "https://github.com/alu0100406122/miLibroCanvas.git",
+          "wiki": "https://github.com/alu0100406122/miLibroCanvas.wiki.git"
+     },
+     "keywords": [
+          "gitbook",
+          "boilerplate",
+          "starter"
+     ],
+     "author": "alu0100406122 alu0100406122@ull.edu.es",
+     "license": "MIT",
+     "bugs": {
+          "url": "https://github.com/alu0100406122/miLibroCanvas/issues"
+     },
+     "homepage": "https://github.com/alu0100406122/miLibroCanvas.git",
+     "IAAS": {
+          "IP": " ",
+          "path": " ",
+          "usuarioremoto": " ",
+          "authentication": " "
+     },
+     "Heroku": {
+          "nombre_app": "librocanvasnayra",
+          "authentication": "No"
+     },
+     "dependencies": {
+          "async": "^1.4.0",
+          "dropbox": "^2.4.0",
+          "express": "~4.13.4",
+          "express-ejs-layouts": "^2.2.0",
+          "fs-extra": "^0.22.1",
+          "gh-pages": "^0.3.1",
+          "gitbook": "^2.1.0",
+          "gitbook-cli": "^0.3.4",
+          "gitbook-plugin-bootstrap-callout": "^0.1.1",
+          "gitbook-plugin-exercises": "^2.1.1",
+          "gitbook-plugin-youtube": "^1.1.0",
+          "gitbook-start-heroku-P9-josue-nayra": "^0.1.8",
+          "gulp": "^3.9.1",
+          "gulp-gh-pages": "^0.5.4",
+          "gulp-git": "^1.11.3",
+          "gulp-install": "^0.6.0",
+          "gulp-run": "^1.7.1",
+          "gulp-shell": "^0.5.2",
+          "gulp-watch": "^4.3.10",
+          "jsonfile": "^2.4.0",
+          "path": "^0.12.7",
+          "prompt": "^1.0.0",
+          "simple-git": "^1.54.0",
+          "ssh-exec": "^2.0.0"
+     }
+}
